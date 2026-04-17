@@ -1,6 +1,6 @@
 # genealogical_analysis_R_scripts
 R pipeline for analysis of SNP data (heterozygosity, PCA, IBD, clustering) based on the SNPRelate package (Zheng et al., 2012).
-### To run this scripts, you will need R installed along with the following packages:
+#### To run this scripts, you will need R installed along with the following packages:
 #### install.packages("BiocManager")
 #### BiocManager::install("SNPRelate")
 #### install.packages("writexl")
