@@ -1,4 +1,4 @@
-# genealogical_analysis_grapevaine_cultivars_R_scripts
+# Genealogical Analysis of Grapevine Cultivars R scripts
 R pipeline for analysis of SNP data (heterozygosity, PCA, IBD, clustering) based on the SNPRelate package (Zheng et al., 2012).
 #### To run this scripts, you will need R installed along with the following packages:
 #### install.packages("BiocManager")
