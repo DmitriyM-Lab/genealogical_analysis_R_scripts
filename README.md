@@ -1,9 +1,14 @@
 # Genealogical Analysis of Grapevine Cultivars
+
 ## Bioinformatics Pipeline for Variant Calling
 This is the bioinformatics pipeline used for mapping reads to a reference genome, post-processing, variant calling, and subsequent filtration.
+
 ## 1. Reference Genome Indexing
+
 `bwa-mem2 index REFERENCE.fasta`
+
 `samtools faidx REFERENCE.fasta`
+
 ## 2. Read Mapping and Post-processing
 ### 2.1. Read Mapping
 `bwa-mem2 mem -M -t <THREADS> -R '@RG\tID:<SAMPLE_ID>\tSM:<SAMPLE_NAME>\tPL:ILLUMINA' REFERENCE.fasta SAMPLE_R1_clean.fastq.gz SAMPLE_R2_clean.fastq.gz | samtools view -@ <THREADS> -b > SAMPLE.bam`
